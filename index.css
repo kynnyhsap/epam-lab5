@@ -1,0 +1,36 @@
+.container {
+    width: 1024px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.31);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.loading-overlay span {
+    position: absolute;
+    margin-top: 50vh;
+    font-size: 3em;
+}
+
+.is-loading {
+    visibility: visible !important;
+}
